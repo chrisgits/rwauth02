@@ -1,0 +1,4 @@
+mongodb://<dbuser>:<dbpassword>@ds143907.mlab.com:43907/mean
+
+meantester
+122
