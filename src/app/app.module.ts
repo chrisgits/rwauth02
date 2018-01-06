@@ -4,12 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AuthService } from './auth/auth.service';
+import { ApiService } from './core/api.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CallbackComponent } from './pages/callback/callback.component';
+import { LoadingComponent } from './core/loading.component';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { CallbackComponent } from './pages/callback/callback.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    CallbackComponent
+    CallbackComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { CallbackComponent } from './pages/callback/callback.component';
   ],
   providers: [
     Title,
-    AuthService
+    AuthService,
+    ApiService
   ],
   bootstrap: [AppComponent]
 })
